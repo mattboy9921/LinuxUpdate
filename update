@@ -37,7 +37,7 @@ function update()
 
         chmod +x updater.sh
         chmod +x "$TMP_FILE"
-        exec updater.sh
+        exec ./updater.sh
     else
         rm -f "$TMP_FILE"
     fi
