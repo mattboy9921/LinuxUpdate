@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION="0.0.3"
+VERSION="0.0.4"
 SCRIPT_URL='https://raw.githubusercontent.com/mattboy9921/LinuxUpdate/main/update'
 SCRIPT_DESCRIPTION="All purpose apt update script for VMs and physical machines - By Matt (MattLabs.net)"
 SCRIPT_LOCATION="${BASH_SOURCE[@]}"
@@ -56,7 +56,7 @@ echo -e "${B}Sources up to date.${NC}"
 
 # Upgrade packages
 echo -e "${B}Upgrading packages...${NC}"
-apt upgrade -y
+apt dist-upgrade -y
 echo -e "${B}Packages upgraded.${NC}"
 
 # Remove unused packages
